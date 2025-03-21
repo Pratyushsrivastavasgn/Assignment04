@@ -11,25 +11,27 @@ body {
 
 .panel {
     max-width: 67rem;
-    width: 90%;
+    width: 60%;
     height: auto;
     margin-top: 10vh;
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     border-radius: 1rem;
     padding: 2rem;
-
 }
 
 .pricing-plan {
     width: 100%;
     max-width: 15.25rem;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -37,13 +39,6 @@ body {
     width: 100%;
     max-width: 15rem;
     height: auto;
-}
-
-.vertical-line {
-    width: 1px;
-    height: 60vh;
-    background-color: hsl(208, 100%, 94%);
-    display: block;
 }
 
 .pricing-header {
@@ -60,6 +55,7 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 2rem;
+    padding: 0;
 }
 
 li {
@@ -71,27 +67,6 @@ li {
     font-weight: 700;
     text-transform: uppercase;
     color: #016FF9;
-}
-
-.pricing-button.is-featured {
-    margin-top: 1rem;
-    background-color: #56A8F5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-hr {
-    background-color: #E1F1FF;
-    height: 2px;
-    border: none;
-    margin-bottom: 1rem;
-    width: 100%;
 }
 
 .pricing-button {
@@ -107,11 +82,22 @@ hr {
     text-decoration: none;
 }
 
-.pricing-button:hover{
+.pricing-button.is-featured {
+    background-color: #56A8F5;
+    color: white;
+    border: none;
+}
+
+.pricing-button:hover {
     transform: scale(1.2);
     transition-duration: 700ms;
     background-color: #016FF9;
     color: white;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
 }
 
 @media (max-width: 800px) {
@@ -121,15 +107,6 @@ hr {
     }
 
     .pricing-plan {
-        max-width: 100%;
-        margin-bottom: 1rem;
+        max-width: 80%;
     }
-    
-}
-
-.pricing-plan:hover{
-    transform: scale(1.1);
-    transition-duration: 300ms  ;
-
-
 }
