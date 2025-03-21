@@ -126,12 +126,10 @@ hr {
     }
     
 }
-.panel:hover{
 
-}
 .pricing-plan:hover{
     transform: scale(1.1);
-    transition-duration: 300ms;
+    transition-duration: 300ms  ;
 
 
 }
